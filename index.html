@@ -36,8 +36,8 @@
 
   <link rel="stylesheet" type="text/css" href="style.css"/>
 
-</head>
-<body>
+<style id="toy-night-boot-style">#toy-night-boot-status{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:28px;box-sizing:border-box;background:#17162d;color:#fff0be;font:600 18px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;text-align:center}#toy-night-boot-status small{display:block;margin-top:10px;color:#b8dfff;font-size:13px;font-weight:400}</style></head>
+<body><div id="toy-night-boot-status" role="status"><div><div id="toy-night-boot-message">正在装配今晚的玩具……</div><small>首次打开需要加载美术和音效，请稍候</small></div></div><script>(function(){var box=document.getElementById('toy-night-boot-status'),msg=document.getElementById('toy-night-boot-message');function fail(text){if(box&&msg){msg.textContent=text;box.style.background='#21172d';}}window.addEventListener('error',function(e){fail('试玩版加载失败，请刷新页面后重试');});window.addEventListener('unhandledrejection',function(){fail('试玩版运行异常，请刷新页面后重试');});window.setTimeout(function(){if(document.getElementById('toy-night-boot-status'))fail('加载时间较长，请检查网络后刷新重试');},15000);})();</script>
   <div id="GameDiv" cc_exact_fit_screen="true">
       <div id="Cocos3dGameContainer">
         <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99"></canvas>
