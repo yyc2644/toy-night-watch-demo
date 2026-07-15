@@ -34,7 +34,7 @@
   <!--<link rel="apple-touch-icon" href=".png" />-->
   <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
 
-  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" type="text/css" href="style.02f4a.css"/>
 
 <style id="toy-night-boot-style">#toy-night-boot-status{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:28px;box-sizing:border-box;background:#17162d;color:#fff0be;font:600 18px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;text-align:center}#toy-night-boot-status small{display:block;margin-top:10px;color:#b8dfff;font-size:13px;font-weight:400}</style></head>
 <body><div id="toy-night-boot-status" role="status"><div><div id="toy-night-boot-message">正在装配今晚的玩具……</div><small>首次打开需要加载美术和音效，请稍候</small></div></div><script>(function(){var box=document.getElementById('toy-night-boot-status'),msg=document.getElementById('toy-night-boot-message');function fail(text){if(box&&msg){msg.textContent=text;box.style.background='#21172d';if(!box.isConnected)document.body.appendChild(box);box.onclick=function(){location.reload();};var hint=box.querySelector('small');if(hint)hint.textContent='轻触屏幕重新加载，存档不会丢失';}}window.addEventListener('error',function(){fail('试玩版加载失败');});window.addEventListener('unhandledrejection',function(){fail('试玩版运行异常');});window.addEventListener('webglcontextlost',function(e){e.preventDefault();fail('图形内存已释放，请重新加载');},true);window.setTimeout(function(){if(document.getElementById('toy-night-boot-status'))fail('加载时间较长，请检查网络');},15000);})();</script>
@@ -47,17 +47,17 @@
 
 <!-- Polyfills bundle. -->
 
-<script src="src/polyfills.bundle.js" charset="utf-8"> </script>
+<script src="src/polyfills.bundle.5adbf.js" charset="utf-8"> </script>
 
 
 <!-- SystemJS support. -->
-<script src="src/system.bundle.js" charset="utf-8"> </script>
+<script src="src/system.bundle.543e6.js" charset="utf-8"> </script>
 
 <!-- Import map -->
-<script src="src/import-map.json" type="systemjs-importmap" charset="utf-8"> </script>
+<script src="src/import-map.dcda2.json" type="systemjs-importmap" charset="utf-8"> </script>
 
 <script>
-    System.import('./index.js').catch(function(err) { console.error(err); })
+    System.import('./index.017f9.js').catch(function(err) { console.error(err); })
 </script>
 
 </body>
